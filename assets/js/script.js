@@ -46,7 +46,7 @@ var saveTasks = function() {
 };
 
 $(".list-group").on("click", "p", function() {
-  console.log("<p> was clicked");
+  console.log(this);
 });
 
 
