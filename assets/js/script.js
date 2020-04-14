@@ -45,6 +45,7 @@ var saveTasks = function() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
+// when task is clicked
 $(".list-group").on("click", "p", function() {
   var text = $(this)
     .text()
@@ -56,6 +57,7 @@ $(".list-group").on("click", "p", function() {
   textInput.trigger("focus");
 });
 
+// when task is changed
 $(".list-group").on("blur", "textarea", function () {
   // get the textarea's current value/text
   var text = $(this)
